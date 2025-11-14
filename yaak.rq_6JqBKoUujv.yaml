@@ -1,0 +1,60 @@
+type: http_request
+model: http_request
+id: rq_6JqBKoUujv
+createdAt: 2025-11-14T11:31:30.211778334
+updatedAt: 2025-11-14T12:04:22.925017403
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_i9wAAspmBU
+authentication:
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwYjAzMDhjYy02MzIxLTQ3YTktYTRjNC1hMTdlODJkZjBjNzciLCJ1c2VybmFtZSI6Ik1hY2V5LkN1bW1lcmF0YTU3IiwiZW1haWwiOiJzYWxha290YWx1dEBnbWFpbC5jb20iLCJpYXQiOjE3NjMxMjA4NDEsImV4cCI6MTc2MzEyNDQ0MX0.KSkpG9ykBOD8vs5-DiSeI5quyfd0aw6ptlC7CLhCfSc
+authenticationType: bearer
+body:
+  form:
+  - enabled: true
+    file: /home/plutack/Documents/Talut-Salako-Nokia.pdf
+    id: nZMXGVy980
+    name: book
+  - enabled: true
+    file: /home/plutack/Documents/Talut-Salako-Nokia.pdf
+    id: ksDVNhbVIF
+    name: bookCover
+  - enabled: true
+    id: fSbSmBqxQB
+    name: title
+    value: The sounds of music
+  - enabled: true
+    id: vH6Y9UKRQ4
+    name: genre
+    value: crime
+  - enabled: true
+    id: WIYrFIBZqF
+    name: price
+    value: '6000'
+  - enabled: true
+    id: uARcXuIEiN
+    name: isMature
+    value: 'false'
+  - enabled: true
+    id: Qxs932xKwq
+    name: dateAuthored
+    value: '"2025-02-05"'
+  - enabled: true
+    id: ifDg6utq30
+    name: pageCount
+    value: '50'
+  - enabled: true
+    id: zGjIR75cea
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: EGhsMcJHiA
+method: POST
+name: Upload New Book
+sortPriority: -1762770094025.0
+url: ${[ BASE_URL ]}/books
+urlParameters: []
