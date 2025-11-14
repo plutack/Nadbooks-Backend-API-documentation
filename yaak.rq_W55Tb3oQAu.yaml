@@ -1,0 +1,19 @@
+type: http_request
+model: http_request
+id: rq_W55Tb3oQAu
+createdAt: 2025-11-10T12:25:22.500409788
+updatedAt: 2025-11-11T07:41:54.856780821
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_96MLDA9Tp8
+authentication:
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwYjAzMDhjYy02MzIxLTQ3YTktYTRjNC1hMTdlODJkZjBjNzciLCJ1c2VybmFtZSI6Ik1hY2V5LkN1bW1lcmF0YTU3IiwiZW1haWwiOiJzYWxha290YWx1dEBnbWFpbC5jb20iLCJpYXQiOjE3NjI4NDY4NzksImV4cCI6MTc2Mjg1MDQ3OX0.eRRkueuzOrTklMC5jXbodb2Tms4T-2RHQe9EdIcyYp
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Get Authenticated User Profile
+sortPriority: -1762770094025.0
+url: ${[ BASE_URL ]}/me
+urlParameters: []

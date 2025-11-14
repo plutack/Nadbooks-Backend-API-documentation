@@ -1,0 +1,30 @@
+type: http_request
+model: http_request
+id: rq_oygU789tJ6
+createdAt: 2025-11-10T10:21:34.034690002
+updatedAt: 2025-11-10T11:54:59.554532004
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_eNWr2t4WwP
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "firstName":"${[ faker.person.firstName() ]}",
+      "lsastName": "${[ faker.person.lastName() ]}",
+      "username": "${[ faker.internet.username() ]}",
+      "email": "${[ faker.internet.email() ]}",
+      "password":  "Password@123"
+    }
+bodyType: application/json
+description: Route to create a new user
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: dxEcFwA5Ez
+method: POST
+name: Create New User
+sortPriority: -1762770094025.0
+url: ${[ BASE_URL ]}/auth/register
+urlParameters: []

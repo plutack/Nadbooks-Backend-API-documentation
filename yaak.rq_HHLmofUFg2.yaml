@@ -1,0 +1,23 @@
+type: http_request
+model: http_request
+id: rq_HHLmofUFg2
+createdAt: 2025-11-10T11:32:14.060506698
+updatedAt: 2025-11-10T11:50:52.189892738
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_eNWr2t4WwP
+authentication: {}
+authenticationType: null
+body:
+  text: "{\n \n  \"email\": \"salakotalut@gmail.com\",\n  \"password\":  \"Password@123\"\n}"
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: mcY0HtiB4V
+method: POST
+name: Login User
+sortPriority: -1762770094025.0
+url: ${[ BASE_URL ]}/auth/login
+urlParameters: []

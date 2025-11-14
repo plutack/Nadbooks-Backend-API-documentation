@@ -1,0 +1,18 @@
+type: environment
+model: environment
+id: ev_2xAAmqGjxy
+workspaceId: wk_5az3JwE4Y3
+createdAt: 2025-11-10T10:17:57.982016853
+updatedAt: 2025-11-10T10:40:37.361164501
+name: Development-Local
+public: true
+base: false
+parentModel: environment
+parentId: null
+variables:
+- enabled: true
+  name: BASE_URL
+  value: http://localhost:8000/api
+  id: 4tAxk3NYSj
+color: var(--warning)
+sortPriority: 0.0

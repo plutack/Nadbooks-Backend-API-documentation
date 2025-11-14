@@ -1,0 +1,18 @@
+type: http_request
+model: http_request
+id: rq_jkMKe6Ch9i
+createdAt: 2025-11-11T07:20:18.716679415
+updatedAt: 2025-11-11T07:22:14.507960652
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_i9wAAspmBU
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: ''
+sortPriority: -1762770094024.999
+url: ${[ BASE_URL ]}/books
+urlParameters: []

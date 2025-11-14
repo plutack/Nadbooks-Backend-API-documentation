@@ -1,0 +1,19 @@
+type: http_request
+model: http_request
+id: rq_74Bm6vzt87
+createdAt: 2025-11-10T12:28:12.060822022
+updatedAt: 2025-11-11T07:27:01.370978841
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_96MLDA9Tp8
+authentication:
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwYjAzMDhjYy02MzIxLTQ3YTktYTRjNC1hMTdlODJkZjBjNzciLCJ1c2VybmFtZSI6Ik1hY2V5LkN1bW1lcmF0YTU3IiwiZW1haWwiOiJzYWxha290YWx1dEBnbWFpbC5jb20iLCJpYXQiOjE3NjI3Nzc1ODcsImV4cCI6MTc2Mjc4MTE4N30.ak-AD4y8FZ1_r77DXnYd3GaKNtUVBn02gHLfZIqehnw
+authenticationType: bearer
+body: {}
+bodyType: null
+description: ''
+headers: []
+method: GET
+name: Get Authenticated User Marked Books
+sortPriority: -1762770094024.999
+url: ${[ BASE_URL ]}/me/bookmarks
+urlParameters: []

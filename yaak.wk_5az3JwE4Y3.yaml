@@ -1,0 +1,14 @@
+type: workspace
+model: workspace
+id: wk_5az3JwE4Y3
+createdAt: 2025-11-10T10:06:34.324365947
+updatedAt: 2025-11-10T10:06:34.324367535
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: Nadbooks-Backend
+encryptionKeyChallenge: null
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0

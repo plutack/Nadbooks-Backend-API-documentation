@@ -1,0 +1,26 @@
+type: http_request
+model: http_request
+id: rq_23VJmcru6c
+createdAt: 2025-11-10T11:58:49.591512140
+updatedAt: 2025-11-10T11:59:34.633225275
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_eNWr2t4WwP
+authentication: {}
+authenticationType: null
+body:
+  text: |
+    {
+      "token": "<google_id_token>"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: 8HFSmRGPif
+method: POST
+name: Login with Google
+sortPriority: -1762770094025.0
+url: ${[ BASE_URL ]}/auth/google
+urlParameters: []
