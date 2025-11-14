@@ -2,14 +2,25 @@ type: http_request
 model: http_request
 id: rq_jkMKe6Ch9i
 createdAt: 2025-11-11T07:20:18.716679415
-updatedAt: 2025-11-14T14:17:40.739505280
+updatedAt: 2025-11-14T17:55:58.818341823
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_i9wAAspmBU
 authentication: {}
 authenticationType: null
 body: {}
 bodyType: null
-description: ''
+description: |
+  Fetch a list of books with optional filtering and pagination. This endpoint supports filtering by genre, price range, and maturity rating. Results are paginated using limit and skip.
+
+  ## Query Parameters
+  | Parameter  | Type    | Required | Default | Description |
+  | ---------- | ---------- | ------------------- | ------- | ---------------------------------------------------------------------------------------------------------- |
+  | `limit`    | number  | no       | `20`    | Maximum number of books to return.                                                                         |
+  | `skip`     | number  | no       | `0`     | Number of books to skip. Used for pagination. For example, page 3 with 20 per page → `skip = 40`.          |
+  | `genre`    | string  | no       | —       | Filter books by genre (e.g., `Fantasy`, `Crime`).                                                          |
+  | `minPrice` | number  | no       | —       | Return books with price **≥ minPrice**.                                                                    |
+  | `maxPrice` | number  | no       | —       | Return books with price **≤ maxPrice**.                                                                    |
+  | `isMature` | boolean | no       | —       | Filter by maturity rating. `true` = mature content, `false` = non-mature. Must be a boolean, not a string. |
 headers: []
 method: GET
 name: Get Books

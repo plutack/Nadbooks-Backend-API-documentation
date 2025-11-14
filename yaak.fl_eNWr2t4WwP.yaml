@@ -2,12 +2,12 @@ type: folder
 model: folder
 id: fl_eNWr2t4WwP
 createdAt: 2025-11-10T10:06:58.843741138
-updatedAt: 2025-11-10T10:06:58.843743
+updatedAt: 2025-11-14T19:37:09.174359158
 workspaceId: wk_5az3JwE4Y3
 folderId: null
 authentication: {}
 authenticationType: null
 description: ''
 headers: []
-name: Auth
+name: Auth Operations
 sortPriority: -1762769218842.0

@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_W55Tb3oQAu
 createdAt: 2025-11-10T12:25:22.500409788
-updatedAt: 2025-11-11T07:41:54.856780821
+updatedAt: 2025-11-14T17:59:51.373494807
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_96MLDA9Tp8
 authentication:
@@ -10,10 +10,15 @@ authentication:
 authenticationType: bearer
 body: {}
 bodyType: null
-description: ''
+description: |
+  Returns the profile of the authenticated user. The request must include a valid JWT token in the Authorization header as a bearer token.
+
+  ```
+  Bearer <access token>
+  ```
 headers: []
 method: GET
-name: Get Authenticated User Profile
+name: Get User Profile
 sortPriority: -1762770094025.0
 url: ${[ BASE_URL ]}/me
 urlParameters: []

@@ -1,0 +1,28 @@
+type: http_request
+model: http_request
+id: rq_ZWpwAZNwV9
+createdAt: 2025-11-14T18:30:36.272592475
+updatedAt: 2025-11-14T19:29:46.934554007
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_i9wAAspmBU
+authentication:
+  token: ${[ response.body.path(request='rq_HHLmofUFg2', path=b64'JC5kYXRhLmFjY2Vzc1Rva2Vu', behavior='always') ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: |
+  Deletes an existing book uploaded by an existing user. This action can only be carried out by the user who uploads the book
+headers: []
+method: DELETE
+name: Delete Book
+sortPriority: -1762770094025.0
+url: ${[ BASE_URL ]}/books/:id
+urlParameters:
+- enabled: true
+  name: :id
+  value: 01c8bf55-9c1b-4f80-9f9e-4e8578a408f4
+  id: aP0y8R3vnm
+- enabled: true
+  name: ''
+  value: ''
+  id: eRhtxwi4BM

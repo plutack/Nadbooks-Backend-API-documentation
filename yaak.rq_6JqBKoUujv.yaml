@@ -2,26 +2,27 @@ type: http_request
 model: http_request
 id: rq_6JqBKoUujv
 createdAt: 2025-11-14T11:31:30.211778334
-updatedAt: 2025-11-14T12:04:22.925017403
+updatedAt: 2025-11-14T19:34:31.746722071
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_i9wAAspmBU
 authentication:
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwYjAzMDhjYy02MzIxLTQ3YTktYTRjNC1hMTdlODJkZjBjNzciLCJ1c2VybmFtZSI6Ik1hY2V5LkN1bW1lcmF0YTU3IiwiZW1haWwiOiJzYWxha290YWx1dEBnbWFpbC5jb20iLCJpYXQiOjE3NjMxMjA4NDEsImV4cCI6MTc2MzEyNDQ0MX0.KSkpG9ykBOD8vs5-DiSeI5quyfd0aw6ptlC7CLhCfSc
+  disabled: false
+  token: ${[ response.body.path(request='rq_HHLmofUFg2', path=b64'JC5kYXRhLmFjY2Vzc1Rva2Vu', behavior='always') ]}
 authenticationType: bearer
 body:
   form:
   - enabled: true
-    file: /home/plutack/Documents/Talut-Salako-Nokia.pdf
+    id: fSbSmBqxQB
+    name: title
+    value: The sounds of music 333
+  - enabled: true
+    file: /home/plutack/Documents/Yaak Documentation/yaak.rq_AVo9Q6DFqd.yaml
     id: nZMXGVy980
     name: book
   - enabled: true
-    file: /home/plutack/Documents/Talut-Salako-Nokia.pdf
+    file: /home/plutack/Documents/Yaak Documentation/yaak.wk_5az3JwE4Y3.yaml
     id: ksDVNhbVIF
     name: bookCover
-  - enabled: true
-    id: fSbSmBqxQB
-    name: title
-    value: The sounds of music
   - enabled: true
     id: vH6Y9UKRQ4
     name: genre
@@ -43,11 +44,26 @@ body:
     name: pageCount
     value: '50'
   - enabled: true
-    id: zGjIR75cea
+    id: a6tDEVD4aX
     name: ''
     value: ''
 bodyType: multipart/form-data
-description: ''
+description: |
+  Upload a book by an authenticated user who is expected to be the author.
+
+  ## Request Type
+  multipart/form-data
+
+  | Field          | Type    | Required | Description                                                                                    |
+  | -------------- | ------- | -------- | ---------------------------------------------------------------------------------------------- |
+  | `title`        | string  | yes      | The title of the book.                                                                         |
+  | `book`         | file    | yes      | The book file itself.                                                                          |
+  | `bookCover`    | file    | yes      | The cover image for the book.                                                                  |
+  | `isMature`     | boolean | no       | Indicates whether the book contains mature content.                                            |
+  | `dateAuthored` | date    | yes      | The date the author considers the book released. Format: `YYYY-MM-DD` (example: `2025-10-10`). |
+  | `genre`        | string  | yes      | The genre of the book.                                                                         |
+  | `price`        | number  | yes      | The price of the book in **BOOKS** currency.                                                   |
+  | `pageCount`    | number  | yes      | The total number of pages in the book.                                                         |
 headers:
 - enabled: true
   name: Content-Type

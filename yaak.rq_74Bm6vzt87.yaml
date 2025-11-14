@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_74Bm6vzt87
 createdAt: 2025-11-10T12:28:12.060822022
-updatedAt: 2025-11-11T07:27:01.370978841
+updatedAt: 2025-11-14T17:35:16.942451167
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_96MLDA9Tp8
 authentication:
@@ -13,7 +13,7 @@ bodyType: null
 description: ''
 headers: []
 method: GET
-name: Get Authenticated User Marked Books
+name: Get User Marked Books
 sortPriority: -1762770094024.999
 url: ${[ BASE_URL ]}/me/bookmarks
 urlParameters: []

@@ -1,0 +1,63 @@
+type: http_request
+model: http_request
+id: rq_mZD9xfRec5
+createdAt: 2025-11-14T18:03:43.162041589
+updatedAt: 2025-11-14T18:33:49.478898151
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_i9wAAspmBU
+authentication:
+  token: ${[ response.body.path(request='rq_HHLmofUFg2', path=b64'JC5kYXRhLmFjY2Vzc1Rva2Vu', behavior='always') ]}
+authenticationType: bearer
+body:
+  form:
+  - enabled: false
+    file: /home/plutack/Documents/Talut-Salako-Cover-Letter-Mono.docx
+    id: 0hkzEnkUbS
+    name: bookCover
+  - enabled: true
+    id: HNXS3Ztjjj
+    name: title
+    value: the sorrow of sadness 2
+  - enabled: true
+    id: VKn98ntaDg
+    name: ''
+    value: ''
+bodyType: multipart/form-data
+description: |
+  Updates an existing book uploaded by the authenticated user.
+  Only the author of the book is allowed to update it.
+
+  Returns 204 status code.
+
+  ## Request Type
+  Multipart/form-Data
+
+  Fields
+  | Field        | Type    | Required | Description                                                                  |
+  | ------------ | ------- | -------- | ---------------------------------------------------------------------------- |
+  | title        | string  | No       | The title of the book.                                                       |
+  | genre        | string  | No       | The genre of the book.                                                       |
+  | price        | number  | No       | The cost of the book (in BOOKS).                                             |
+  | pageCount    | number  | No       | Total number of pages.                                                       |
+  | isMature     | boolean | No       | Whether the book contains mature content.                                    |
+  | dateAuthored | Date    | No       | Date the author considers the book released. Must be in `YYYY-MM-DD` format. |
+  | book      | File | No       | Replaces the existing book file.   |
+  | bookCover | File | No       | Replaces the existing cover image. |
+headers:
+- enabled: true
+  name: Content-Type
+  value: multipart/form-data
+  id: B7X8fucRPX
+method: PATCH
+name: Update Book
+sortPriority: -1762770094025.0
+url: ${[ BASE_URL ]}/books/:id
+urlParameters:
+- enabled: true
+  name: :id
+  value: 01c8bf55-9c1b-4f80-9f9e-4e8578a408f4
+  id: mgbKGciU79
+- enabled: true
+  name: ''
+  value: ''
+  id: 788KPqYnFx

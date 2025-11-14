@@ -1,0 +1,28 @@
+type: http_request
+model: http_request
+id: rq_AVo9Q6DFqd
+createdAt: 2025-11-14T19:25:42.849788145
+updatedAt: 2025-11-14T19:25:57.191702820
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_i9wAAspmBU
+authentication:
+  token: ${[ response.body.path(request='rq_HHLmofUFg2', path=b64'JC5kYXRhLmFjY2Vzc1Rva2Vu', behavior='always') ]}
+authenticationType: bearer
+body: {}
+bodyType: null
+description: |
+  Deletes an existing book uploaded by an existing user. This action can only be carried out by the user who uploads the book
+headers: []
+method: DELETE
+name: Remove Book to User BookMark Copy
+sortPriority: -1762770094024.997
+url: ${[ BASE_URL ]}/books/bookmarks/:id
+urlParameters:
+- enabled: true
+  name: :id
+  value: 01c8bf55-9c1b-4f80-9f9e-4e8578a408f4
+  id: 4skruGMUKg
+- enabled: true
+  name: ''
+  value: ''
+  id: yS6mHGiYn6

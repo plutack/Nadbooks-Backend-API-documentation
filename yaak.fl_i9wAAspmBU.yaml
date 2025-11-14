@@ -2,12 +2,12 @@ type: folder
 model: folder
 id: fl_i9wAAspmBU
 createdAt: 2025-11-11T07:19:58.248952582
-updatedAt: 2025-11-11T07:19:58.248953439
+updatedAt: 2025-11-14T19:36:37.916752339
 workspaceId: wk_5az3JwE4Y3
 folderId: null
 authentication: {}
 authenticationType: null
 description: ''
 headers: []
-name: Books
+name: Books Operations
 sortPriority: -1762845598248.0

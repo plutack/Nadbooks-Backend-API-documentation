@@ -2,15 +2,20 @@ type: http_request
 model: http_request
 id: rq_HHLmofUFg2
 createdAt: 2025-11-10T11:32:14.060506698
-updatedAt: 2025-11-10T11:50:52.189892738
+updatedAt: 2025-11-14T18:03:17.030423956
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_eNWr2t4WwP
 authentication: {}
 authenticationType: null
 body:
-  text: "{\n \n  \"email\": \"salakotalut@gmail.com\",\n  \"password\":  \"Password@123\"\n}"
+  text: |-
+    {
+      "email": "salakotalut@gmail.com",
+      "password":  "Password@123"
+    }
 bodyType: application/json
-description: ''
+description: |
+  Authenticates a user using their email and password.
 headers:
 - enabled: true
   name: Content-Type
