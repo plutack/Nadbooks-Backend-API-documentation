@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_ukMUrbgwit
 createdAt: 2025-11-15T05:30:51.857465280
-updatedAt: 2025-11-15T12:35:04.227908720
+updatedAt: 2025-11-15T12:36:26.306199574
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_WV8hW6Nsss
 authentication:
@@ -27,5 +27,5 @@ headers:
 method: POST
 name: Initiate a Deposit Transaction
 sortPriority: 0.0
-url: ${[ BASE_URL ]}/wallets/deposit
+url: ${[ BASE_URL ]}/payments/deposit
 urlParameters: []

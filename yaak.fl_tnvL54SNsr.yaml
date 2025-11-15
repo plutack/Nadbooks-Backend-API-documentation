@@ -2,12 +2,12 @@ type: folder
 model: folder
 id: fl_tnvL54SNsr
 createdAt: 2025-11-14T19:37:30.749496474
-updatedAt: 2025-11-14T19:37:30.749497937
+updatedAt: 2025-11-15T12:37:19.604985996
 workspaceId: wk_5az3JwE4Y3
 folderId: null
 authentication: {}
 authenticationType: null
 description: ''
 headers: []
-name: Wallet Operations
+name: Payments Operations
 sortPriority: -1763149050748.0
