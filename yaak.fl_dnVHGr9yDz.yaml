@@ -2,7 +2,7 @@ type: folder
 model: folder
 id: fl_dnVHGr9yDz
 createdAt: 2025-11-14T19:38:04.326139392
-updatedAt: 2025-11-14T19:38:04.326141056
+updatedAt: 2025-11-15T11:31:04.571288202
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_tnvL54SNsr
 authentication: {}
@@ -10,4 +10,4 @@ authenticationType: null
 description: ''
 headers: []
 name: Withdrawal
-sortPriority: -1763149084325.0
+sortPriority: 1000.0

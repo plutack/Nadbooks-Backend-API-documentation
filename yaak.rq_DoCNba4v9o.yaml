@@ -1,0 +1,23 @@
+type: http_request
+model: http_request
+id: rq_DoCNba4v9o
+createdAt: 2025-11-15T11:30:48.334728091
+updatedAt: 2025-11-15T12:30:57.152499235
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_dnVHGr9yDz
+authentication: {}
+authenticationType: null
+body:
+  text: "{\n  \n}"
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: y546pu5xfE
+method: POST
+name: Initiate withdrawal
+sortPriority: 0.0
+url: ${[ BASE_URL ]}/wallets/withdrawal
+urlParameters: []

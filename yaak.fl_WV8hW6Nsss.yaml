@@ -2,7 +2,7 @@ type: folder
 model: folder
 id: fl_WV8hW6Nsss
 createdAt: 2025-11-14T19:37:45.921691280
-updatedAt: 2025-11-14T19:37:45.921692739
+updatedAt: 2025-11-15T11:31:04.586428727
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_tnvL54SNsr
 authentication: {}
@@ -10,4 +10,4 @@ authenticationType: null
 description: ''
 headers: []
 name: Deposit
-sortPriority: -1763149065920.0
+sortPriority: 2000.0
