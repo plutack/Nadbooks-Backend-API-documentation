@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_mZD9xfRec5
 createdAt: 2025-11-14T18:03:43.162041589
-updatedAt: 2025-11-15T18:44:54.167430576
+updatedAt: 2025-11-19T20:26:22.955917244
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_i9wAAspmBU
 authentication:
@@ -23,7 +23,7 @@ body:
     name: ''
     value: ''
 bodyType: multipart/form-data
-description: |
+description: |+
   Updates an existing book uploaded by the authenticated user.
   Only the author of the book is allowed to update it.
 
@@ -43,6 +43,7 @@ description: |
   | dateAuthored | Date    | No       | Date the author considers the book released. Must be in `YYYY-MM-DD` format. |
   | book      | File | No       | Replaces the existing book file.   |
   | bookCover | File | No       | Replaces the existing cover image. |
+
 headers:
 - enabled: true
   name: Content-Type

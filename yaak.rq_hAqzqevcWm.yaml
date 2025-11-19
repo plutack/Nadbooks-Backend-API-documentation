@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_hAqzqevcWm
 createdAt: 2025-11-14T18:44:47.276063140
-updatedAt: 2025-11-14T18:58:17.287763677
+updatedAt: 2025-11-19T20:29:53.326260172
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_i9wAAspmBU
 authentication:
@@ -10,8 +10,7 @@ authentication:
 authenticationType: bearer
 body: {}
 bodyType: null
-description: |
-  Deletes an existing book uploaded by an existing user. This action can only be carried out by the user who uploads the book
+description: "Add book to the authenticated user bookmark \n\nResponse Object\n\n```\n{\n  \"statusCode\": 201,\n  \"message\": \"Success\",\n  \"errors\": null,\n  \"data\": {\n    \"id\": 15,\n    \"userId\": \"0b0308cc-6321-47a9-a4c4-a17e82df0c77\",\n    \"bookId\": \"01c8bf55-9c1b-4f80-9f9e-4e8578a408f4\",\n    \"createdAt\": \"2025-11-14T19:28:06.975Z\"\n  }\n}\n```\n"
 headers: []
 method: POST
 name: Add Book to User BookMark

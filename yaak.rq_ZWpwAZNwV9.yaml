@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_ZWpwAZNwV9
 createdAt: 2025-11-14T18:30:36.272592475
-updatedAt: 2025-11-15T18:45:24.054552774
+updatedAt: 2025-11-19T20:27:44.935902873
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_i9wAAspmBU
 authentication:
@@ -10,8 +10,7 @@ authentication:
 authenticationType: bearer
 body: {}
 bodyType: null
-description: |
-  Deletes an existing book uploaded by an existing user. This action can only be carried out by the user who uploads the book
+description: "Deletes an existing book uploaded by an authenticated user. \n\nReturns 204\n\n"
 headers: []
 method: DELETE
 name: Delete Book

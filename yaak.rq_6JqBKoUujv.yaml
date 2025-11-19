@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_6JqBKoUujv
 createdAt: 2025-11-14T11:31:30.211778334
-updatedAt: 2025-11-15T18:41:41.112313630
+updatedAt: 2025-11-19T20:28:29.291936697
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_i9wAAspmBU
 authentication:
@@ -48,7 +48,7 @@ body:
     name: ''
     value: ''
 bodyType: multipart/form-data
-description: |
+description: |-
   Upload a book by an authenticated user who is expected to be the author.
 
   ## Request Type
@@ -64,6 +64,30 @@ description: |
   | `genre`        | string  | yes      | The genre of the book.                                                                         |
   | `price`        | number  | yes      | The price of the book in **BOOKS** currency.                                                   |
   | `pageCount`    | number  | yes      | The total number of pages in the book.                                                         |
+
+  Response Object
+
+  ```
+  {
+    "statusCode": 201,
+    "message": "Success",
+    "errors": null,
+    "data": {
+      "id": "221d9b21-6a28-410b-b38a-141abc3b0fd7",
+      "title": "The sounds of music 22",
+      "genre": "crime",
+      "price": 6000,
+      "isMature": true,
+      "pageCount": 50,
+      "bookURL": "https://dl.dropboxusercontent.com/scl/fi/mfqbicvg6flpg049vqq1g/The-sounds-of-music-22?rlkey=399zy2vwvrwpl7mejwh7jn10o&dl=0",
+      "bookCoverURL": "https://dl.dropboxusercontent.com/scl/fi/mel8bohdwszv3bl8c90gr/The-sounds-of-music-22-cover?rlkey=4i2aokm4pz81n1k4639pdy4q1&dl=0",
+      "dateUpdated": "2025-11-15T18:42:30.808Z",
+      "dateAuthored": "2025-02-04T23:00:00.000Z",
+      "dateUploaded": "2025-11-15T18:42:30.806Z",
+      "authorId": "0b0308cc-6321-47a9-a4c4-a17e82df0c77"
+    }
+  }
+  ```
 headers:
 - enabled: true
   name: Content-Type
