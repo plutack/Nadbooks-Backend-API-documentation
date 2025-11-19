@@ -2,19 +2,34 @@ type: http_request
 model: http_request
 id: rq_W55Tb3oQAu
 createdAt: 2025-11-10T12:25:22.500409788
-updatedAt: 2025-11-14T17:59:51.373494807
+updatedAt: 2025-11-19T20:22:56.876118279
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_96MLDA9Tp8
 authentication:
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwYjAzMDhjYy02MzIxLTQ3YTktYTRjNC1hMTdlODJkZjBjNzciLCJ1c2VybmFtZSI6Ik1hY2V5LkN1bW1lcmF0YTU3IiwiZW1haWwiOiJzYWxha290YWx1dEBnbWFpbC5jb20iLCJpYXQiOjE3NjI4NDY4NzksImV4cCI6MTc2Mjg1MDQ3OX0.eRRkueuzOrTklMC5jXbodb2Tms4T-2RHQe9EdIcyYp
+  token: ${[ response.body.path(request='rq_HHLmofUFg2', path=b64'JC5kYXRhLmFjY2Vzc1Rva2Vu', behavior='always') ]}
 authenticationType: bearer
 body: {}
 bodyType: null
 description: |
-  Returns the profile of the authenticated user. The request must include a valid JWT token in the Authorization header as a bearer token.
+  Returns the profile of the authenticated user.
 
+  Response Object
   ```
-  Bearer <access token>
+  {
+    "statusCode": 200,
+    "message": "Success",
+    "errors": null,
+    "data": {
+      "id": "9a5f8891-9d5b-445c-b7bb-f1933c264bc0",
+      "firstName": "ross",
+      "lastName": "west",
+      "username": "Unique_Carroll64",
+      "email": "salakotalut@gmail.com",
+      "Wallet": {
+        "balance": "0"
+      }
+    }
+  }
   ```
 headers: []
 method: GET

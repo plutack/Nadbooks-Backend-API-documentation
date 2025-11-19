@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_6JqBKoUujv
 createdAt: 2025-11-14T11:31:30.211778334
-updatedAt: 2025-11-14T19:34:31.746722071
+updatedAt: 2025-11-15T18:41:41.112313630
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_i9wAAspmBU
 authentication:
@@ -14,7 +14,7 @@ body:
   - enabled: true
     id: fSbSmBqxQB
     name: title
-    value: The sounds of music 333
+    value: The sounds of music 22
   - enabled: true
     file: /home/plutack/Documents/Yaak Documentation/yaak.rq_AVo9Q6DFqd.yaml
     id: nZMXGVy980
@@ -44,7 +44,7 @@ body:
     name: pageCount
     value: '50'
   - enabled: true
-    id: a6tDEVD4aX
+    id: VjiHJhpsQq
     name: ''
     value: ''
 bodyType: multipart/form-data

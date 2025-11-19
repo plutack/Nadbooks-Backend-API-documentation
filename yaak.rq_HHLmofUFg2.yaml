@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_HHLmofUFg2
 createdAt: 2025-11-10T11:32:14.060506698
-updatedAt: 2025-11-14T18:03:17.030423956
+updatedAt: 2025-11-19T20:18:31.513584128
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_eNWr2t4WwP
 authentication: {}
@@ -14,8 +14,39 @@ body:
       "password":  "Password@123"
     }
 bodyType: application/json
-description: |
+description: |-
   Authenticates a user using their email and password.
+
+
+  Request type
+
+  ```
+  {
+    "email": "salakotalut@gmail.com",
+    "password":  "Password@123"
+  }
+  ```
+
+  Response Type
+
+  ```
+  {
+    "statusCode": 201,
+    "message": "Success",
+    "errors": null,
+    "data": {
+      "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5YTVmODg5MS05ZDViLTQ0NWMtYjdiYi1mMTkzM2MyNjRiYzAiLCJ1c2VybmFtZSI6IlVuaXF1ZV9DYXJyb2xsNjQiLCJlbWFpbCI6InNhbGFrb3RhbHV0QGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzYzNTgzNDUxLCJleHAiOjE3NjM1ODcwNTF9.tmuYdlaoxwLUMekm4DPKxZAM4UAfwZMSClWztKB8GXw",
+      "user": {
+        "id": "9a5f8891-9d5b-445c-b7bb-f1933c264bc0",
+        "username": "Unique_Carroll64",
+        "firstName": "ross",
+        "lastName": "west",
+        "email": "salakotalut@gmail.com",
+        "role": "USER"
+      }
+    }
+  }
+  ```
 headers:
 - enabled: true
   name: Content-Type

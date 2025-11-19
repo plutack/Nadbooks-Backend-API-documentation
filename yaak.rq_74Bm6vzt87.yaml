@@ -2,15 +2,28 @@ type: http_request
 model: http_request
 id: rq_74Bm6vzt87
 createdAt: 2025-11-10T12:28:12.060822022
-updatedAt: 2025-11-14T17:35:16.942451167
+updatedAt: 2025-11-19T20:21:42.471248662
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_96MLDA9Tp8
 authentication:
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwYjAzMDhjYy02MzIxLTQ3YTktYTRjNC1hMTdlODJkZjBjNzciLCJ1c2VybmFtZSI6Ik1hY2V5LkN1bW1lcmF0YTU3IiwiZW1haWwiOiJzYWxha290YWx1dEBnbWFpbC5jb20iLCJpYXQiOjE3NjI3Nzc1ODcsImV4cCI6MTc2Mjc4MTE4N30.ak-AD4y8FZ1_r77DXnYd3GaKNtUVBn02gHLfZIqehnw
+  token: ${[ response.body.path(request='rq_HHLmofUFg2', path=b64'JC5kYXRhLmFjY2Vzc1Rva2Vu', behavior='always') ]}
 authenticationType: bearer
 body: {}
 bodyType: null
-description: ''
+description: |-
+  Get all books bookmarked by the authenticated user.
+
+
+  Response Object
+
+  ```
+  {
+    "statusCode": 200,
+    "message": "Success",
+    "errors": null,
+    "data": []
+  }
+  ```
 headers: []
 method: GET
 name: Get User Marked Books

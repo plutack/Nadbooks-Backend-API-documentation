@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_mZD9xfRec5
 createdAt: 2025-11-14T18:03:43.162041589
-updatedAt: 2025-11-14T18:33:49.478898151
+updatedAt: 2025-11-15T18:44:54.167430576
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_i9wAAspmBU
 authentication:
@@ -55,9 +55,9 @@ url: ${[ BASE_URL ]}/books/:id
 urlParameters:
 - enabled: true
   name: :id
-  value: 01c8bf55-9c1b-4f80-9f9e-4e8578a408f4
+  value: 221d9b21-6a28-410b-b38a-141abc3b0fd7
   id: mgbKGciU79
 - enabled: true
   name: ''
   value: ''
-  id: 788KPqYnFx
+  id: FVWvBddHsW

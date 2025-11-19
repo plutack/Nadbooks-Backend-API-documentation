@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_jkMKe6Ch9i
 createdAt: 2025-11-11T07:20:18.716679415
-updatedAt: 2025-11-14T17:55:58.818341823
+updatedAt: 2025-11-15T18:47:21.239189089
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_i9wAAspmBU
 authentication: {}
@@ -25,5 +25,5 @@ headers: []
 method: GET
 name: Get Books
 sortPriority: -1762770094024.999
-url: ${[ BASE_URL ]}/books?limit=20&skip=0&genre=crime&minPrice=500&maxPrice=20000&isMature=true
+url: ${[ BASE_URL ]}/books?limit=20&skip=0&genre=crime&minPrice=7000&maxPrice=20000&isMature=true
 urlParameters: []

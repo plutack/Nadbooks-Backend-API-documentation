@@ -2,7 +2,7 @@ type: http_request
 model: http_request
 id: rq_oygU789tJ6
 createdAt: 2025-11-10T10:21:34.034690002
-updatedAt: 2025-11-10T11:54:59.554532004
+updatedAt: 2025-11-19T20:17:24.838601901
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_eNWr2t4WwP
 authentication: {}
@@ -11,13 +11,48 @@ body:
   text: |-
     {
       "firstName":"${[ faker.person.firstName() ]}",
-      "lsastName": "${[ faker.person.lastName() ]}",
+      "lastName": "${[ faker.person.lastName() ]}",
       "username": "${[ faker.internet.username() ]}",
       "email": "${[ faker.internet.email() ]}",
       "password":  "Password@123"
     }
 bodyType: application/json
-description: Route to create a new user
+description: |-
+  create a new user
+
+
+  Request Type
+  ```
+  {
+    "firstName":"Talut",
+    "lastName": "Salako",
+    "username": "plutack",
+    "email": "plutack@nobody.live",
+    "password":  "Password@123"
+  }
+
+  ```
+
+  Response Type
+
+  ```
+  {
+    "statusCode": 201,
+    "message": "Success",
+    "errors": null,
+    "data": {
+      "id": "ec0d8138-dca2-47fc-b30c-1b0a43edaeb2",
+      "firstName": "sunny",
+      "lastName": "heaney",
+      "email": "Hillard_Nikolaus@gmail.com",
+      "username": "Rosamond42",
+      "role": "USER",
+      "Wallet": {
+        "balance": "0"
+      }
+    }
+  }
+  ```
 headers:
 - enabled: true
   name: Content-Type
