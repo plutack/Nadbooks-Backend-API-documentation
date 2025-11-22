@@ -1,0 +1,32 @@
+type: http_request
+model: http_request
+id: rq_vEDC9EydDP
+createdAt: 2025-11-22T16:24:05.938958972
+updatedAt: 2025-11-22T16:31:23.603107560
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_6jNTCVZbvv
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: |+
+  Fetch all transactions or transactions for a specific user.
+
+  - Admin: Can fetch all transactions or filter by user.
+
+  - Regular users: Can fetch only their own transactions.
+
+  | Field    | Type   | Required | Description                                                       |
+  | -------- | ------ | -------- | ----------------------------------------------------------------- |
+  | `userId` | string | no       | Optional. Only for Admin. Fetch transactions for a specific user. |
+
+  Response Example
+
+
+
+headers: []
+method: GET
+name: Get Transactions
+sortPriority: -1762770094025.0
+url: ${[ BASE_URL ]}/transactions
+urlParameters: []

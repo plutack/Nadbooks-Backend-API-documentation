@@ -1,0 +1,26 @@
+type: http_request
+model: http_request
+id: rq_fheDhB9xFi
+createdAt: 2025-11-22T16:19:32.124014618
+updatedAt: 2025-11-22T16:33:57.330178556
+workspaceId: wk_5az3JwE4Y3
+folderId: fl_6jNTCVZbvv
+authentication: {}
+authenticationType: null
+body: {}
+bodyType: null
+description: |+
+  Fetch a specific transaction by its reference.
+  - Admin: Can fetch any transaction.
+  - Regular users: Can fetch only their own transactions.
+
+  | Field       | Type   | Required | Description                              |
+  | ----------- | ------ | -------- | ---------------------------------------- |
+  | `reference` | string | yes      | The unique reference of the transaction. |
+
+headers: []
+method: GET
+name: Get Transaction by reference
+sortPriority: -1762770094025.0
+url: ${[ BASE_URL ]}/transactions/:reference
+urlParameters: []

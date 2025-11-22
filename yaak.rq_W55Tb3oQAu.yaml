@@ -2,11 +2,11 @@ type: http_request
 model: http_request
 id: rq_W55Tb3oQAu
 createdAt: 2025-11-10T12:25:22.500409788
-updatedAt: 2025-11-19T20:22:56.876118279
+updatedAt: 2025-11-22T16:20:10.401361376
 workspaceId: wk_5az3JwE4Y3
 folderId: fl_96MLDA9Tp8
 authentication:
-  token: ${[ response.body.path(request='rq_HHLmofUFg2', path=b64'JC5kYXRhLmFjY2Vzc1Rva2Vu', behavior='always') ]}
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI5YTVmODg5MS05ZDViLTQ0NWMtYjdiYi1mMTkzM2MyNjRiYzAiLCJ1c2VybmFtZSI6IlVuaXF1ZV9DYXJyb2xsNjQiLCJlbWFpbCI6InNhbGFrb3RhbHV0QGdtYWlsLmNvbSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzYzNTgzNzE2LCJleHAiOjE3NjM1ODczMTZ9.lAr2wUxSa0sBW1bmjh1nEMDsnz9zrtz6zFoq-KukLho
 authenticationType: bearer
 body: {}
 bodyType: null
